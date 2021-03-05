@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+}
+html, body{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+        left: 50%;
+        margin-left: -512px;   /* 50% */
+    }
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: #d63364;
+}
+
+.inner_header {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #d63364;
+
+}
+
+.logo_container img {
+    height: 80px;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #d63364;
+    float: left;
+}
+
+.navigation {
+    float: left;
+    height: 100%
+}
+
+.navigation li {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    background-color: #d63364;
+}
+
+.navigation li a {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: #444;
+    font-size: 16px;
+    background-color: #d63364;
+}
+
+.navigation a:hover {
+    color: black;
+}
+
+
+.page {
+    margin: auto;
+    width: 1000px;
+    background-color: #f2f5ce;
+    min-height: 100%;
+    height: auto;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+}
+
+.text {
+    border-collapse: separate;
+    border-spacing: 1em;
+    background: transparent;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.text p {
+    background: transparent;
+}
+
+.text > table > tbody > tr > td {
+    background-color: #e6f2f7;
+
+    border: 8px solid #d63364;
+    border-right-color: #a83d5d;
+    border-left-color: #a83d5d;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.text * {
+    background-color: transparent;
+    overflow: hidden;
+
+}
+
+.text img {
+    float: left;
+    padding-right: 1em;
+    width: 200px;
+}
